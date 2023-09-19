@@ -1,0 +1,36 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    string alfabet;
+    char *alfabet_simbols;
+    bool jester_shild=true;
+    int i=0, x;
+    while(jester_shild==true){
+        cout<<"enter number alfabet";
+        cin>>
+        cout<<"Пожалуйста введите название для папок\n";
+        cin>>alfabet;
+        if(alfabet!= "\n"){
+            cout<<"g";
+            jester_shild=false;
+        }    
+        alfabet_simbols = (char*) malloc(sizeof(char));
+        do{
+            alfabet_simbols[i]=alfabet[i];
+            i++
+            if(i>=x){
+                alfabet_simbols = (char*) realloc(alfabet_simbols, x++ * sizeof(char));
+            }
+        }while(i<3);
+    }    
+    int g=0;
+    while(g<=3){
+        cout<<"\n"<<alfabet_simbols[g]<<"\n";
+        g++;
+    }
+
+    return 0;
+}
